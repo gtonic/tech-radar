@@ -1,17 +1,17 @@
 name: GH Pages deploy
 
-  on:
-    push:
-      branches: main
-      paths-ignore:
-        - "**.md"
+on:
+   push:
+     branches: main
+     paths-ignore:
+       - "**.md"
 
-    pull_request:
-      branches: main
-      paths-ignore:
-        - "**.md"
+   pull_request:
+     branches: main
+     paths-ignore:
+       - "**.md"
 
-  jobs:
+jobs:
     build-deploy:
       runs-on: ubuntu-latest
 
